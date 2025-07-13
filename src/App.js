@@ -1,7 +1,7 @@
 // src/App.js
 import React, { useEffect, useState } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -10,7 +10,6 @@ import {
 
 import Navbar from "./components/Navbar";
 import AutoImageSlider from "./components/AutoImageSlider";
-
 import Loader from "./components/Loader";
 import FlipCard from "./components/FlipCard";
 import Header from "./components/Header";
@@ -19,7 +18,6 @@ import MyPurchased from "./components/MyPurchased";
 import WalletProfile from "./components/WalletProfile";
 import ReferralRebatePage from "./components/ReferralRebatePage";
 import ProductSection from "./components/ProductSection";
-// import ImageSlider from "./components/ImageSlider";
 import AutoScrollingNotifications from "./components/AutoScrollingNotifications";
 import InvestmentCard from "./components/InvestmentCard";
 
@@ -75,7 +73,7 @@ function App() {
             <PrivateRoute>
               <>
                 <Header />
-                <AutoImageSlider/>
+                <AutoImageSlider />
                 <FloatingSocialIcons />
                 <InvestmentCard />
                 <AutoScrollingNotifications />
@@ -91,7 +89,6 @@ function App() {
             <PrivateRoute>
               <>
                 <Header />
-             
                 <ProductSection />
                 <FloatingSocialIcons />
                 <Navbar />
@@ -137,11 +134,11 @@ function App() {
           }
         />
 
-        {/* Catch-all route to redirect unknown paths */}
+        {/* Catch-all for unknown paths */}
         <Route path="*" element={<Navigate to={isLoggedIn() ? "/home" : "/login"} />} />
       </Routes>
     </Router>
   );
-}
+} 
 
 export default App;
