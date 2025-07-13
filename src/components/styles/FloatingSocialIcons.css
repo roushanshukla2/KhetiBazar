@@ -1,0 +1,119 @@
+.fab-button,
+.social-icons i {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #18ab41;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.fab-button {
+  transition: transform 0.3s ease;
+  padding: 0;
+  position: fixed;
+  bottom: 13vh; /* responsive vertical position */
+  right: 2vw;  /* responsive horizontal position */
+  z-index: 1000;
+}
+
+.fab-button svg {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.4s ease;
+}
+
+.fab-button.open svg {
+  transform: rotate(180deg);
+}
+
+.social-icons {
+  position: absolute;
+  bottom: calc(13vh - 85px); 
+  right: 2vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 5;
+}
+
+.social-icons i {
+  font-size: 20px;
+  transition: all 0.4s ease;
+  transform: translateY(20px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.show i {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.show i:nth-child(1) {
+  transition-delay: 0.05s;
+}
+.show i:nth-child(2) {
+  transition-delay: 0.15s;
+}
+.show i:nth-child(3) {
+  transition-delay: 0.25s;
+}
+
+.social-icons i:hover {
+  transform: scale(1.1);
+}
+
+.social-icons a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+/* ✅ Responsive adjustments using media queries */
+
+@media (max-width: 768px) {
+  .fab-button,
+  .social-icons i {
+    width: 40px;
+    height: 40px;
+  }
+
+  .fab-button svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .social-icons {
+    gap: 8px;
+  }
+
+  .social-icons i {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fab-button,
+  .social-icons i {
+    width: 36px;
+    height: 36px;
+  }
+
+  .fab-button svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .social-icons {
+    gap: 6px;
+  }
+
+  .social-icons i {
+    font-size: 16px;
+  }
+}

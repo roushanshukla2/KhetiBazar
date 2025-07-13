@@ -1,0 +1,101 @@
+.field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.field i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 16px;
+}
+
+.field input {
+  height: 100%;
+  width: 90%;
+  padding-left: 40px;
+  font-size: 17px;
+  outline: none;
+  border: 1px solid lightgrey;
+  border-radius: 25px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
+.field label {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  font-size: 17px;
+  color: #999;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+  background: #fff;
+  padding: 0 5px;
+}
+
+.field input:focus ~ label,
+.field input:valid ~ label {
+  top: 0;
+  font-size: 16px;
+  color: #4158d0;
+  transform: translateY(-50%);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  font-size: 16px;
+}
+
+.content input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+}
+
+.content label {
+  margin-left: 5px;
+}
+
+.field input[type="submit"] {
+  color: #fff;
+  border: none;
+  margin-top: -10px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #50c8b8, #1aff00);
+  transition: all 0.3s ease;
+  padding-left: 0;
+}
+
+.field input[type="submit"]:active {
+  transform: scale(0.95);
+}
+
+.pass-link a,
+.signup-link a {
+  color: #4158d0;
+  text-decoration: none;
+}
+
+.pass-link a:hover,
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  width: 100% !important;
+}

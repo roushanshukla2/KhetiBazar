@@ -1,0 +1,216 @@
+/* Base Section */
+.product-section {
+  font-family: 'Poppins', sans-serif;
+  background-color: #06b740;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Tab Buttons */
+.product-tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+/* Tabs */
+.product-tab {
+  background: #f0f0f0;
+  padding: 10px 24px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Active Tab */
+.product-active {
+  background: linear-gradient(to right, #7e57c2, #9575cd);
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Wrapper for Cards */
+.product-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 85px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Individual Product Card */
+.product-card {
+  background-color: #f5f7ff;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  max-width: 1300px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  overflow-x: hidden;
+}
+
+/* Badge */
+.product-days-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #0b8d3b;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Card Content Layout */
+.product-card-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Image */
+.product-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+/* Info */
+.product-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Title */
+.product-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+/* Income + Price Layout */
+.product-income-info {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+/* Income Text */
+.product-green-text {
+  color: #0b8d3b;
+  font-size: 22px;
+}
+
+/* Price */
+.product-price {
+  font-size: 18px;
+  color: #5e35b1;
+  font-weight: 500;
+}
+
+/* Button */
+.product-invest-btn {
+  background: linear-gradient(to right, #7e57c2, #7c4dff);
+  color: white;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.3s ease;
+  display: block;
+  margin-left: auto;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Hover Button */
+.product-invest-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Responsive Media Queries ---------- */
+
+@media (max-width: 992px) {
+  .product-income-info {
+    gap: 40px;
+  }
+
+  .product-title {
+    font-size: 20px;
+  }
+
+  .product-green-text {
+    font-size: 20px;
+  }
+
+  .product-price {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-image {
+    max-width: 100%;
+  }
+
+  .product-income-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .product-invest-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-tab {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .product-title {
+    font-size: 18px;
+  }
+
+  .product-green-text {
+    font-size: 18px;
+  }
+
+  .product-price {
+    font-size: 14px;
+  }
+
+  .product-invest-btn {
+    font-size: 14px;
+    padding: 10px 24px;
+  }
+}

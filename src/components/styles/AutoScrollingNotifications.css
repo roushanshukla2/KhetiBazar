@@ -1,0 +1,133 @@
+.parent-wrapper {
+  background: linear-gradient(to bottom, #00c853, #00c853 60%);
+  padding: 20px;
+}
+
+.notification-wrapper {
+  width: 100%;
+  max-width: 700px;
+  max-height: 360px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, #00c853, #00c853 60%);
+  margin: 0 auto 100px auto;
+  height: 200px; /* Set a fixed height for the wrapper */
+}
+
+.notifications-list {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #00c853, #00c853 60%);
+  transition: transform 0.5s ease;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #cde5d6;
+  background: white;
+  flex-wrap: wrap; /* helps stack on small screens */
+}
+
+.notification:last-child {
+  border-bottom: none;
+}
+
+.notification-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #00c853;
+  padding: 5px;
+  flex-shrink: 0;
+}
+
+.notification-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+}
+
+.message {
+  font-size: 13px;
+  color: #555;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #888;
+  white-space: nowrap;
+  margin-left: auto;
+  padding-left: 10px;
+}
+
+/* ========================
+   Media Queries for Responsiveness
+   ======================== */
+
+/* Tablets (768px and down) */
+@media (max-width: 768px) {
+  .notification-wrapper {
+    max-height: none;
+    border-radius: 8px;
+  }
+
+  .notification {
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timestamp {
+    margin-left: 0;
+    padding-left: 0;
+    padding-top: 5px;
+  }
+
+  .user-name {
+    font-size: 13px;
+  }
+
+  .message {
+    font-size: 12px;
+  }
+}
+
+/* Mobile (480px and down) */
+@media (max-width: 480px) {
+  .notification-wrapper {
+    padding: 0 10px;
+  }
+
+  .user-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .user-name {
+    font-size: 12px;
+  }
+
+  .message {
+    font-size: 11px;
+  }
+
+  .timestamp {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,210 @@
+
+
+    .main-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 0;
+    }
+
+    .profile-container {
+      background: linear-gradient(to bottom, #00c853, #00c853 60%, white 40%);
+      width: 100%;
+
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin: auto;
+    }
+
+    .user-information-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .user-information-container img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 4px solid white;
+    }
+
+    .user-information-container p:nth-child(2) {
+      font-weight: 600;
+      color: #fff;
+      font-size: 18px;
+    }
+
+    .user-information-container p:nth-child(3) {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .account-balance {
+      background: #fff;
+      margin-top: 20px;
+      padding: 16px 20px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .account-balance-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .account-balance-text span:first-child {
+      color: #8e2de2;
+      font-size: 13px;
+    }
+
+    .account-balance-text span:last-child {
+      font-weight: 700;
+      font-size: 22px;
+      color: #444;
+    }
+
+    .account-balance button {
+      background: linear-gradient(135deg, #1c9e5f, #1aff00);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .account-balance button:hover {
+      filter: brightness(1.1);
+    }
+
+    .wallet-container {
+      margin: 30px auto;
+      padding: 0 10% 110px 10%;
+      margin-bottom: 10%;
+      
+    }
+
+    .wallet-top-boxes {
+      display: flex;
+      justify-content: space-between;
+      background: linear-gradient(90deg, #8e2de2, #a166ff);
+      border-radius: 20px;
+      padding: 20px;
+      color: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .wallet-box {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      border-radius: 15px;
+      min-width: 100px;
+    }
+
+    .wallet-box:not(:last-child) {
+      border-right: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .wallet-box p {
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .wallet-box strong {
+      font-size: 20px;
+      display: block;
+    }
+
+    .wallet-menu {
+      background: #f4f6ff;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    .wallet-menu-item {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid #c7aefc;
+      color: #5f34da;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+    }
+
+    .wallet-menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .wallet-menu-item:hover {
+      background-color: rgba(142, 45, 226, 0.1);
+    }
+
+    .wallet-menu-item i {
+      margin-right: 15px;
+      font-size: 18px;
+    }
+
+    .wallet-menu-item .right-arrow {
+      margin-left: auto;
+      color: #999;
+    }
+
+    .exit-button {
+      width: 100%;
+      margin-top: 25px;
+      padding: 14px;
+      border-radius: 12px;
+      background: linear-gradient(to right, #00c853, #00e676);
+      color: #fff;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 6px 15px rgba(0, 200, 83, 0.3);
+      transition: background 0.3s ease;
+    }
+
+    .exit-button:hover {
+      filter: brightness(1.1);
+    }
+
+    @media (max-width: 480px) {
+      .wallet-top-boxes {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .wallet-box:not(:last-child) {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      }
+
+      .wallet-box {
+        width: 100%;
+        padding: 15px 0;
+      }
+
+      .account-balance {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .account-balance-text span:last-child {
+        font-size: 20px;
+      }
+
+      .exit-button {
+        font-size: 16px;
+      }
+    }

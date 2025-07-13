@@ -1,0 +1,83 @@
+.Investment-card-wrapper {
+  background: linear-gradient(to bottom, #00c853, #00c853 60%);
+  padding: 0 100px;
+}
+
+.Investment-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+
+.Investment-badge-left,
+.Investment-badge-right {
+  position: absolute;
+  top: 10px;
+  padding: 6px 12px;
+  background: #4caf50;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.Investment-badge-left {
+  left: 10px;
+}
+
+.Investment-badge-right {
+  right: 10px;
+}
+
+.Investment-limited {
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.Investment-tractor {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  margin: 16px 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Investment-income-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 16px;
+}
+
+.Investment-profit,
+.Investment-total {
+  font-size: 18px;
+  color: #4caf50;
+}
+
+.Investment-price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.Investment-invest-btn {
+  background: #4caf50;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.Investment-invest-btn:hover {
+  background: #388e3c;
+}

@@ -1,0 +1,33 @@
+.upper-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #1c9e5f, #1aff00);
+}
+
+.upper-nav-left-container img {
+  height: 55px;
+}
+
+.upper-nav-mid-container h3 {
+  font-size: 24px;
+  color: #fff;
+}
+
+.upper-nav-right-container i {
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.upper-nav-right-container i:hover {
+  color: #007bff;
+}
