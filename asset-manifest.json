@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/KhetiBazar/static/css/main.981042af.css",
+    "main.js": "/KhetiBazar/static/js/main.bd2bbe59.js",
+    "static/js/453.5f1d3dfd.chunk.js": "/KhetiBazar/static/js/453.5f1d3dfd.chunk.js",
+    "static/media/fa-solid-900.ttf": "/KhetiBazar/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
+    "static/media/fa-brands-400.ttf": "/KhetiBazar/static/media/fa-brands-400.1815e00441357e01619e.ttf",
+    "static/media/fa-solid-900.woff2": "/KhetiBazar/static/media/fa-solid-900.2463b90d9a316e4e5294.woff2",
+    "static/media/fa-brands-400.woff2": "/KhetiBazar/static/media/fa-brands-400.c210719e60948b211a12.woff2",
+    "static/media/tractorBanner.jpeg": "/KhetiBazar/static/media/tractorBanner.cde558c9f91812d0e16f.jpeg",
+    "static/media/fa-regular-400.ttf": "/KhetiBazar/static/media/fa-regular-400.914997e1bdfc990d0897.ttf",
+    "static/media/fruite-basket-banner.jpeg": "/KhetiBazar/static/media/fruite-basket-banner.86eb931aafed314157ad.jpeg",
+    "static/media/tractor.png": "/KhetiBazar/static/media/tractor.002ee362a779ebcd053b.png",
+    "static/media/fa-regular-400.woff2": "/KhetiBazar/static/media/fa-regular-400.89999bdf5d835c012025.woff2",
+    "static/media/logo.png": "/KhetiBazar/static/media/logo.958472585162470076a9.png",
+    "static/media/profile.png": "/KhetiBazar/static/media/profile.7be2f85246d3a16c41f4.png",
+    "static/media/fa-v4compatibility.ttf": "/KhetiBazar/static/media/fa-v4compatibility.da94ef451f4969af06e6.ttf",
+    "static/media/fa-v4compatibility.woff2": "/KhetiBazar/static/media/fa-v4compatibility.ea8f94e1d22e0d35ccd4.woff2",
+    "static/media/menu.svg": "/KhetiBazar/static/media/menu.517a8edfa0ee4f72ce437b6f81c3a94e.svg",
+    "index.html": "/KhetiBazar/index.html",
+    "main.981042af.css.map": "/KhetiBazar/static/css/main.981042af.css.map",
+    "main.bd2bbe59.js.map": "/KhetiBazar/static/js/main.bd2bbe59.js.map",
+    "453.5f1d3dfd.chunk.js.map": "/KhetiBazar/static/js/453.5f1d3dfd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.981042af.css",
+    "static/js/main.bd2bbe59.js"
+  ]
+}
