@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KhetiBazar/static/css/main.981042af.css",
-    "main.js": "/KhetiBazar/static/js/main.bd2bbe59.js",
+    "main.js": "/KhetiBazar/static/js/main.ac2f14e5.js",
     "static/js/453.5f1d3dfd.chunk.js": "/KhetiBazar/static/js/453.5f1d3dfd.chunk.js",
     "static/media/fa-solid-900.ttf": "/KhetiBazar/static/media/fa-solid-900.2582b0e4bcf85eceead0.ttf",
     "static/media/fa-brands-400.ttf": "/KhetiBazar/static/media/fa-brands-400.1815e00441357e01619e.ttf",
@@ -19,11 +19,11 @@
     "static/media/menu.svg": "/KhetiBazar/static/media/menu.517a8edfa0ee4f72ce437b6f81c3a94e.svg",
     "index.html": "/KhetiBazar/index.html",
     "main.981042af.css.map": "/KhetiBazar/static/css/main.981042af.css.map",
-    "main.bd2bbe59.js.map": "/KhetiBazar/static/js/main.bd2bbe59.js.map",
+    "main.ac2f14e5.js.map": "/KhetiBazar/static/js/main.ac2f14e5.js.map",
     "453.5f1d3dfd.chunk.js.map": "/KhetiBazar/static/js/453.5f1d3dfd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.981042af.css",
-    "static/js/main.bd2bbe59.js"
+    "static/js/main.ac2f14e5.js"
   ]
 }
